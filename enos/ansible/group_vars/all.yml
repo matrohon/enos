@@ -7,8 +7,11 @@ enable_monitoring: true
 
 # enable tc constraints when invoking tc phase
 tc_enable: true
-# output dir to store test validation of tc rules enforcement 
+# output dir to store test validation of tc rules enforcement
 tc_output_dir: /tmp
+
+registry:
+  url: https://registry-1.docker.io
 
 # default openstack env
 os_env:
@@ -24,7 +27,6 @@ os_env:
   OS_IDENTITY_API_VERSION: 3
   OS_REGION_NAME: "RegionOne"
 
-# list of 
 # list of available patchs
 # to enable one patch copy past its description
 # to your local config file and enable it
